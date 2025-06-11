@@ -1,0 +1,9 @@
+transformers
+torch
+torchaudio
+pydub
+scikit-learn
+audiorecorder
+joblib
+streamlit
+librosa
