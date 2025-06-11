@@ -1,8 +1,8 @@
-streamlit==1.35.0
-transformers==4.41.1
-torch>=2.1.0
-librosa==0.10.1
-scikit-learn==1.4.2
-joblib==1.4.2
-pydub==0.25.1
-soundfile==0.12.1
+streamlit
+transformers
+torch
+librosa
+scikit-learn
+joblib
+pydub
+soundfile
