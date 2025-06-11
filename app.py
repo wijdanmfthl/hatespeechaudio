@@ -5,6 +5,7 @@ import os
 import joblib
 import io
 
+from pydub.utils import which
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_extraction.text import TfidfVectorizer
 from pydub import AudioSegment
@@ -12,7 +13,7 @@ from st_audiorec import st_audiorec
 from transformers import AutoProcessor, WhisperForConditionalGeneration
 
 st.set_page_config(page_title="Deteksi Ujaran Kebencian Audio", layout="centered")
-
+AudioSegment.converter = which("ffmpeg")
 # Load model Whisper
 @st.cache_resource
 def load_whisper_model():
