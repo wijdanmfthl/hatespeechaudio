@@ -10,4 +10,4 @@ numba==0.56.4
 llvmlite==0.39.1
 ffmpeg-python==0.2.0
 PySastrawi==1.2.0
-streamlit-audio-recorder
+git+https://github.com/stefanrmmr/streamlit_audio_recorder.git
