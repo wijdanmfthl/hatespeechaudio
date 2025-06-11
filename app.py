@@ -67,7 +67,7 @@ with tab1:
 
 # Rekam
 with tab2:
-    recorded_audio = audio_recorder("🎙️ Klik untuk rekam", "⏹️ Stop")
+    recorded_audio = audio_recorder()
     if recorded_audio:
         st.session_state.audio_bytes = recorded_audio
         st.success("✅ Selesai merekam!")
