@@ -9,14 +9,14 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_extraction.text import TfidfVectorizer
 from pydub import AudioSegment
 from st_audiorec import st_audiorec
-from transformers import WhisperProcessor, WhisperForConditionalGeneration
+from transformers import AutoProcessor, WhisperForConditionalGeneration
 
 st.set_page_config(page_title="Deteksi Ujaran Kebencian Audio", layout="centered")
 
 # Load model Whisper
 @st.cache_resource
 def load_whisper_model():
-    processor = WhisperProcessor.from_pretrained("openai/whisper-medium")
+    processor = AutoProcessor.from_pretrained("openai/whisper-medium")
     model = WhisperForConditionalGeneration.from_pretrained("openai/whisper-medium")
     return processor, model
 
