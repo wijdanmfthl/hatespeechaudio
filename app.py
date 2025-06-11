@@ -8,7 +8,7 @@ import io
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_extraction.text import TfidfVectorizer
 from pydub import AudioSegment
-from streamlit_audio_recorder import audio_recorder
+from st_audiorec import st_audiorec
 from transformers import WhisperProcessor, WhisperForConditionalGeneration
 
 st.set_page_config(page_title="Deteksi Ujaran Kebencian Audio", layout="centered")
@@ -67,7 +67,8 @@ with tab1:
 
 # Rekam
 with tab2:
-    recorded_audio = audio_recorder()
+    st.info("Tekan tombol di bawah untuk mulai/berhenti merekam")
+    recorded_audio = st_audiorec()
     if recorded_audio:
         st.session_state.audio_bytes = recorded_audio
         st.success("✅ Selesai merekam!")
