@@ -1,8 +1,7 @@
 streamlit
-transformers
 torch
-librosa
 scikit-learn
 joblib
-pydub
-soundfile
+faster-whisper
+ffmpeg-python
+numpy
