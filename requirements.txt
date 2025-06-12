@@ -1,7 +1,8 @@
-streamlit
-torch
-scikit-learn
-joblib
-faster-whisper
 ffmpeg-python
+streamlit
+faster-whisper
+joblib
+pandas
 numpy
+PySastrawi
+scikit-learn
